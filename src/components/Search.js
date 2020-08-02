@@ -14,7 +14,10 @@ export const Search = () => {
       return
     }
 
+    github.clearUsers()
+
     if (value.trim()) {
+      alert.hide()
       github.search(value.trim());
     } else {
       alert.show('Введите данные пользователя', 'warning')
