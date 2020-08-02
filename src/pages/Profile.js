@@ -47,23 +47,24 @@ export const Profile = ({match}) => {
                   <p>{bio}</p>
                 </>
               }
-              <a 
-                href={html_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-dark"
-              >Open profile</a>
               <ul>
                 {login && <li><strong>Username: </strong>{login}</li>}
                 {company && <li><strong>Company: </strong>{company}</li>}
                 {blog && <li><strong>Website: </strong>{blog}</li>}
               </ul>
-              <div className="badge badge-primary">Followers: {followers}</div>
+              <div className="badge badge-primary ml-4">Followers: {followers}</div>
               <div className="badge badge-success">Following: {following}</div>
               <div className="badge badge-info">Repos: {public_repos}</div>
               <div className="badge badge-dark">Gists: {public_gists}</div>
+              <div className="col mt-4 ml-2">
+                <a 
+                  href={html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-dark"
+                >Open profile</a>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
