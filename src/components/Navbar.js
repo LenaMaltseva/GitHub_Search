@@ -7,12 +7,12 @@ export const Navbar = () => (
     <ul className="navbar-nav">
       <li className="nav-item">
         <NavLink to="/" exact className="nav-link">
-          Главная
+          Home
         </NavLink>
       </li>
       <li className="nav-item">
         <NavLink to="/about" className="nav-link">
-          Информация
+          About
         </NavLink>
       </li>
     </ul>
